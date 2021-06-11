@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorTextos: #49454567;
+}
+.header{
+    background: url('../img/bg-banner02.jpg') no-repeat fixed;
+    background-size: cover;
+    min-height: 650px;
+    
+}
+.bg-color
+{
+    background-color: rgba(78, 90, 77, 0.993);
+    min-height: 650px;
+}
+
+.navbar-default {
+    background-color: rgba(58, 182, 33, 0.932);
+    border:0px;
+    padding: 20px 0; 
+    transition: all 0.3s;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
+{
+    color: #3bac18;
+}
+
+.top-nav-collapse {
+    padding: 0; 
+    background: rgb(53, 216, 31);
+}
+
+.logo-dec
+{
+    color: #145212;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.container{
+    width: 90%;
+    justify-content: space-evenly;
+    min-height: 725;
+    max-height: 725;
+    margin: auto;
+    overflow: hidden;
+    box-align: center;
+}
+
+.container h1{
+    text-align: center;
+    width: 960px;
+}
+
+body {
+    font-family: 'Roboto';
+    background: #4568DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #22ca3e, #4adc45);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #22ca3e, #4adc45);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    padding: 0;
+    display: inline-flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+form{
+    background: linear-gradient(to right, #22ca3e, #4adc45);
+}
+.form{
+    border-radius: 10px;
+    padding: 50px ;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: inline-flexbox;
+    width: 10% 10;
+    height: 60%;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px ;
+}
+
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 5px solid var(--colorTextos);
+}
+
+
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #0f9738, #1ddb5dec);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
+
+button{
+    font-family: 'roboto';
+    background: #4568DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #159148, #1ddb5dec);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 976px;
+    margin: 10px auto;
+    color: #fff;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    form{
+        width: 100%;
+    }
+}
+footer
+{
+    padding: 20px 10px;
+    background-color: #d6f1cb;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 20px;
+    margin-top: 100rem;
+}
+.scrollToTop {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    color: #61d44a;
+    background: #46be21;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+    background-color: #627961;
+}
+.white-bg
+{
+    background-color: rgb(116, 116, 116);
+}
+footer a{
+    color: #26be21;
+}

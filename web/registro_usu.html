@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+   
+</head>
+<body>
+    <header id="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="#">ON HEALT<span class="logo-dec">LINE</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li class=""><a href="login_usu.html">Iniciar Sesion Usuario</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+    </header>
+    <br><br><br>
+    <br><br><br><br><br>
+      
+    <form action="guardarUsuario" method="POST" id="registro">
+        
+        <div class="form">
+            <h1>REGISTRARME</h1>
+            <div class="grupo">
+                <input type="name" name="nom_usu" id="nom_usu" ><span class="barra"></span>
+                <label for="">Nombre</label>
+            </div>
+            <div class="grupo">
+              <input type="text" name="appat" id="appat" ><span class="barra"></span>
+              <label for="">Apellido Paterno</label>
+          </div>
+          <div class="grupo">
+            <input type="text" name="apmat" id="apmat" ><span class="barra"></span>
+            <label for="">Apellido Materno</label>
+        </div>
+          
+            <div class="grupo">
+                <input type="password" name="password_usu" id="password_usu" ><span class="barra"></span>
+                <label for="">Password</label>
+            </div>
+            
+            <button type="submit">Registrarme</button>
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+    <br><br><br><br>
+    <footer id="footer">
+      <div class="container">
+        <div class="row text-center">
+          <p>&copy; ON HEALT LINE</p>
+          <div class="credits">
+        
+            REPOSITORIO:<a href="https://github.com/Jonh28-02/PA_EQ8_4IV9"> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+</html>

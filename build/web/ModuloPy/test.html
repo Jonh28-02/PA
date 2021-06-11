@@ -1,0 +1,371 @@
+<html>
+    <head>
+        <title>GRAFICAS</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+        <link rel='stylesheet' type='text/css' href='morris.css'>	
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js'></script>
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>	
+        <script src='Morris.js'></script>
+        <script>    
+      
+
+function grafica1(){
+          new Morris.Line({
+          element: 'graph1',
+  data: [ 
+      {x:'6 anos', y:21.4},
+{x:'7 anos', y:23.26},
+{x:'8 anos', y:25.64},
+{x:'9 anos', y:28.6},
+{x:'10 anos ', y:32.22},
+{x:'11 anos', y:36.51},
+{x:'12 anos', y:41.38},
+{x:'13 anos', y:46.68},
+{x:'14 anos', y:52.15},
+{x:'15 anos', y:57.49},
+{x:'16 anos', y:62.27},
+{x:'17 anos', y:66.03},
+
+      ],
+    xkey: 'x',
+      parseTime: false,
+      ykeys: ['y'],
+    labels: ['Peso'],
+    lineColors:['black']
+    });
+  
+    document.getElementById('div1').style.display='';
+    document.getElementById('boton1').style.display='none';
+}
+
+
+
+
+function grafica2(){
+  new Morris.Bar({
+  element: 'graph2',
+  data: [
+      {x:'Venustiano C.', y:42.78},
+{x:'Cuahutemoc', y:39.536},
+{x:'Miguel Hidalgo', y:39.15},
+{x:'Benito Juarez ', y:42.18},
+{x:'Coyoacan', y:41.1},
+{x:'Alvaro Obr.', y:39.83},
+{x:'Gustavo A. Mad.', y:43.8912},
+{x:'Iztapalapa', y:46.7},
+{x:'Milpa Alta', y:36.6667},
+{x:'Xochimilco', y:37.53},
+ 
+      ],
+  xkey: 'x',
+  ykeys: ['y'],
+  labels: ['Peso'],
+  barColors: function (row, series, type) {
+    if (type === 'bar') {
+      var red = Math.ceil(255 * row.y / this.ymax);
+      return 'rgb(' + red + ',0,0)';
+    }
+    else {
+      return '#000';
+    }
+  }
+});
+    document.getElementById('div2').style.display='';
+    document.getElementById('boton2').style.display='none';
+}
+
+
+
+
+function grafica3(){
+  new Morris.Area({
+  element: 'graph3',
+  data: [
+      {x:'1984', y:15.8},
+{x:'1989', y:14.9},
+{x:'1992', y:14.6},
+{x:'1994', y:15.4},
+{x:'1996', y:16.7},
+{x:'1998', y:18.1},
+{x:'2000', y:18.7},
+{x:'2002', y:20.5},
+{x:'2004', y:23.3},
+{x:'2005', y:24.0},
+{x:'2008', y:25.1},
+{x:'2010', y:25.0},
+{x:'2014', y:32.4},
+{x:'2020', y:35.7},
+
+      ],
+  xkey: 'x',
+  ykeys: ['y'],
+  labels: ['Tendencia en porcentaje']
+}).on('click', function(i, row){
+  console.log(i, row);
+});
+
+    document.getElementById('div3').style.display='';
+    document.getElementById('boton3').style.display='none';
+}
+
+
+
+
+function grafica4(){
+  var day_data = [
+      {x:'15 a 11 anos', Hombres:18, Mujeres:18},
+{x:'12 a 19 anos', Hombres:21, Mujeres:27},
+{x:'20 anos y mas', Hombres:42, Mujeres:37},
+ 
+      ];
+new Morris.Bar({
+  element: 'graph4',
+  data: day_data,
+  xkey: 'x',
+  ykeys: ['Hombres', 'Mujeres'],
+  labels: ['Hombres', 'Mujeres'],
+  xLabelAngle: 60
+});
+
+document.getElementById('div4').style.display='';
+document.getElementById('boton4').style.display='none';
+}
+
+
+
+
+function grafica5(){
+
+  new Morris.Donut({
+  element: 'graph5',
+  data: [
+      {value:'36', label:'Carne'},
+{value:'21', label:'Frutas y verduras'},
+{value:'19', label:'Lacteis'},
+{value:'7', label:'Frituras'},
+{value:'8', label:'Refrescos'},
+{value:'8', label:'Pan dulce'},
+{value:'1', label:'Productos enlatados'},
+{value:'1', label:'Embutidos'},
+{value:'2', label:'Pan integral'},
+
+      ],
+  formatter: function (x) { return x + "%"}
+}).on('click', function(i, row){
+  console.log(i, row);
+});
+
+document.getElementById('div5').style.display='';
+document.getElementById('boton5').style.display='none';
+}
+
+
+
+
+function grafica6(){
+  var day_data = [ 
+      {x:'Sobrepeso', Ninos:19.1, Ninas:19.9},
+{x:'Obesidad', Ninos:22.4, Ninas:11.9},
+{x:'Total', Ninos:41.5, Ninas:31.8},
+
+      ];
+new Morris.Bar({
+  element: 'graph6',
+  data: day_data,
+  xkey: 'x',
+  ykeys: ['Ninos', 'Ninas'],
+  labels: ['Ninos', 'Ninas'],
+  xLabelAngle: 0
+
+});
+
+document.getElementById('div6').style.display='';
+document.getElementById('boton6').style.display='none';
+}
+
+
+
+
+function grafica7(){
+  new Morris.Line({
+  element: 'graph7',
+  data: [ 
+      {x:'2006', y:25824000, z:1},
+{x:'2008', y:38780000, z:2},
+{x:'2010', y:35371000, z:3},
+{x:'2012', y:37887900, z:4},
+{x:'2014', y:38528000, z:5},
+{x:'2016', y:48087000, z:6},
+{x:'2018', y:49344200, z:7},
+{x:'2020', y:52525800, z:8},
+{x:'2022', y:58598400, z:9},
+{x:'2023', y:59121600, z:10},
+{x:'2024', y:60298800, z:11},
+{x:'2025', y:61476000, z:12},
+
+      ],
+  xkey: 'x',
+      parseTime: false,
+      ykeys: ['y'],
+    labels: ['Poblacion con obesidad'],
+    lineColors:['black']
+    });
+  
+      document.getElementById('div7').style.display='';
+    document.getElementById('boton7').style.display='none';
+}
+
+
+
+
+
+  </script>
+  </head>
+    <body>
+      <h1>Gráficas</h1>
+      <br>
+      <h3 texto1></h3>
+
+
+
+      <hr style="border-color:rgb(2, 192, 240);">
+      <br>
+      <br>
+      <br>
+
+      <p><h2>Peso ideal de un niño respecto a su edad</h2></p>
+      <div id='graph1'>
+        <div id="div1" style="display:none">
+        <br>
+        <br>
+        </div>
+      </div>
+      <div id='botones'>
+            <input type='button' style="display:'';" id='boton1' value='Ver'  class="rainbow-button"  onclick='grafica1()'>      
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr style="border-color:rgb(2, 192, 240);">
+      <br>
+      <br>
+      <br>
+
+      <p><h2>Promedio del peso de niños según el municipio de la CDMX</h2></p>
+      <div id='graph2'>
+        <div id="div2" style="display:none">
+        <br>
+        <br>
+        </div>
+      </div>
+      <div id='botones2'>
+        <input type='button' style="display:'';" id='boton2' value='Ver'  class="rainbow-button"  onclick='grafica2()'>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr style="border-color:rgb(2, 192, 240);">
+      <br>
+      <br>
+      <br>
+
+      <p><h2>Tasa de obesidad en México</h2></p>
+      <div id='graph3'>
+        <div id="div3" style="display:none">
+        <br>
+        <br>
+        </div>
+      </div>
+      <div id='botones3'>
+        <input type='button' style="display:'';" id='boton3' value='Ver'  class="rainbow-button"  onclick='grafica3()'>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr style="border-color:rgb(2, 192, 240);">
+      <br>
+      <br>
+      <br>
+
+      <p><h2>Porcentaje de prevalencia de sobrepeso en la población de 5 años o más por grupos de edad y sexo</h2></p>
+      <div id='graph4'>
+        <div id="div4" style="display:none">
+        <br>
+        <br>
+        </div>
+      </div>
+      <div id='botones4'>
+        <input type='button' style="display:'';" id='boton4' value='Ver'  class="rainbow-button"  onclick='grafica4()'>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr style="border-color:rgb(2, 192, 240);">
+      <br>
+      <br>
+      <br>
+
+      <p><h2>Alimentos más consumidos por niños en México</h2></p>
+      <div id='graph5'>
+        <div id="div5" style="display:none">
+        <br>
+        <br>
+        </div>
+      </div>
+      <div id='botones5'>
+        <input type='button' style="display:'';" id='boton5' value='Ver'  class="rainbow-button"  onclick='grafica5()'>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr style="border-color:rgb(2, 192, 240);">
+      <br>
+      <br>
+      <br>
+
+      <p><h2>Porcentaje de niños y niñas con obesidad y sobrepeso en México</h2></p>
+      <div id='graph6'>
+        <div id="div6" style="display:none">
+        <br>
+        <br>
+        </div>
+      </div>
+      <div id='botones6'>
+        <input type='button' style="display:'';" id='boton6' value='Ver'  class="rainbow-button"  onclick='grafica6()'>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr style="border-color:rgb(2, 192, 240);">
+      <br>
+      <br>
+      <br>
+
+      <p><h2>Prediccion sobre el numero de casos de obesidad en Mexico hasta 2025</h2></p>
+      <div id='graph7'>
+        <div id="div7" style="display:none">
+        <br>
+        <br>
+        </div>
+      </div>
+      <div id='botones7'>
+        <input type='button' style="display:'';" id='boton7' value='Ver'  class="rainbow-button"  onclick='grafica7()'>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr style="border-color:rgb(2, 192, 240);">
+      <br>
+
+      </div>
+    </body>
+</html>
