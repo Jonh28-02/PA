@@ -67,9 +67,9 @@ body {
     font-family: 'Roboto';
     background: #4568DC;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #22ca3e, #4adc45);
+    background: -webkit-linear-gradient(to right, #2270ca, #458cdc);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #22ca3e, #4adc45);
+    background: linear-gradient(to right, #2270ca, #45a0dc);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 0;
     padding: 0;

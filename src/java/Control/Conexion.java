@@ -25,7 +25,7 @@ public class Conexion {
     
     public static Connection getConnection(){
         String url, userName, password;
-        url="jdbc:mysql://localhost/proyecto";
+        url="jdbc:mysql://localhost/proyectoaula";
         userName="root";
         password="ringorivera28";
         
@@ -46,7 +46,7 @@ public class Conexion {
     
     public void Conectar(){
         try{
-            usu="root"; contra="2122loken"; host="localhost"; db="proyecto";
+            usu="root"; contra="ringorivera28"; host="localhost"; db="proyecto";
             String url="jdbc:mysql://"+host+"/"+db;
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             conec=DriverManager.getConnection(url,usu,contra);

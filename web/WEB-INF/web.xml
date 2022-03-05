@@ -28,6 +28,14 @@
         <servlet-name>guardarimc</servlet-name>
         <servlet-class>servlet.guardarimc</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>guardarprogreso</servlet-name>
+        <servlet-class>servlet.guardarprogreso</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>rutina</servlet-name>
+        <servlet-class>servlet.rutina</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>guardarUsuario</servlet-name>
         <url-pattern>/guardarUsuario</url-pattern>
@@ -55,6 +63,14 @@
     <servlet-mapping>
         <servlet-name>guardarimc</servlet-name>
         <url-pattern>/guardarimc</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>guardarprogreso</servlet-name>
+        <url-pattern>/guardarprogreso</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>rutina</servlet-name>
+        <url-pattern>/rutina</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

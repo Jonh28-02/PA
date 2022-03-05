@@ -59,7 +59,7 @@
       leyenda="Estas en tu peso ideal";
       }
      //enviamos el comentario a la caja correspondiente
-     document.getElementById("leyenda").value=leyenda;
+     document.getElementById("imc").value=leyenda;
       }
      </script>
    
@@ -98,7 +98,7 @@
     <br><br><br>
     <br><br><br><br><br>
       
-    <form action="guardarimc" method="POST" id="formulario">
+    <form action="" method="POST" id="formulario">
         
         <div class="form">
             <h1>REGISTRO DE IMC</h1>
@@ -114,7 +114,7 @@
             
             <button type="button" value="Calcular IMC" onClick="calculaIMC()">CALCULAR IMC</button>
             <div class="grupo">
-              <input type="text" name="imc" id="imc" size="10" maxlength="15"><span class="barra"></span>
+              <input type="text" name="imc" id="imc" size="10" maxlength="40"><span class="barra"></span>
                 <label for="">IMC:</label>
             </div>
             

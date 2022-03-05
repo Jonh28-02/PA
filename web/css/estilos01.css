@@ -1,0 +1,117 @@
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+#nab > li {
+    float: left;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+#nab li a {
+    background-color: #f9f9f8;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.div-titulo {
+    padding-top: 50px;
+}
+
+.titulo-rutina {
+    background-color: rgb(208, 238, 255);
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 90%;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0)
+}
+
+#hr-rutina {
+    height: 30px;
+    width: 60%;
+}
+
+.fondo-ejercicio {
+    margin: auto;
+    background-color: rgb(208, 238, 255);
+    align-items: center;
+    width: 80%;
+    padding: 80px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.div-imagen {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.imagen-ejercicio {
+    display:block;
+    margin:auto; 
+    max-height: 400px;   
+}
+
+
+.titulo1-ejercicio {
+    font-size: 40px;
+}
+
+
+.titulo2-ejercicio {
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+.texto-ejercicio {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.boton-ejercicio {
+    margin: auto;
+    padding-top: 30px;
+    width: 135px;
+}
+
+.boton-ejercicio2 {
+    margin: auto;
+    padding-top: 30px;
+    width: 125px;
+}
+
+
+
+.cronom {
+    background-color: #f9f9f8;
+    margin: auto;
+    width: 260px;
+    height: 170px;
+    position: fixed;
+    padding-top: 100px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.asd {
+    width: 200px;
+    margin: auto;
+}
+
+#cronom2 {
+    width: 260px;
+    height: 1000px;
+    background-color: white;
+    margin: auto;
+    position: fixed;
+    padding-top: 300px;
+    align-items: center;
+    padding-left: 20px;
+    display: none;
+}

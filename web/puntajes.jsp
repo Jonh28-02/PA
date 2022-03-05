@@ -56,7 +56,7 @@
                         <li class=""><a href="leccion2.jsp">Leccion 2</a></li>
                         <li class=""><a href="leccion3.jsp">Leccion 3</a></li>
                         <li class=""><a href="leccion4.jsp">Leccion 4</a></li>
-                        <li class=""><a href="">IMC</a></li>
+                        <li class=""><a href="imc.jsp">IMC</a></li>
                         <li class=""><a href="puntajes.jsp">Puntajes</a></li>
                         <li class=""><a href="">Graficas</a></li>
                         <li class=""><a href="#">Bienvenido: <input type="hidden" name="id_usu">- <input type="hidden"

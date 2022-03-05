@@ -12,58 +12,77 @@ package Modelo;
 public class Usuario {
     
     private int id_usu;
-    private String nombre_usu;
-    private String apellidoP_usu;
-    private String apellidoM_usu;
-    private String correo_usu;
-    private String password_usu;
+    private String nom_usu;
+    private String appat;
+    private String apmat;
+    private String nom;
+    private String genero;
+    private String edad;
+    private String password;
 
     public int getId_usu() {
         return id_usu;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
     public void setId_usu(int id_usu) {
         this.id_usu = id_usu;
     }
 
-    public String getNombre_usu() {
-        return nombre_usu;
+    public String getNom_usu() {
+        return nom_usu;
     }
 
-    public void setNombre_usu(String nombre_usu) {
-        this.nombre_usu = nombre_usu;
+    public void setNom_usu(String nom_usu) {
+        this.nom_usu = nom_usu;
     }
 
-    public String getApellidoP_usu() {
-        return apellidoP_usu;
+    public String getAppat() {
+        return appat;
     }
 
-    public void setApellidoP_usu(String apellidoP_usu) {
-        this.apellidoP_usu = apellidoP_usu;
+    public void setAppat(String appat) {
+        this.appat = appat;
     }
 
-    public String getApellidoM_usu() {
-        return apellidoM_usu;
+    public String getApmat() {
+        return apmat;
     }
 
-    public void setApellidoM_usu(String apellidoM_usu) {
-        this.apellidoM_usu = apellidoM_usu;
+    public void setApmat(String apmat) {
+        this.apmat = apmat;
     }
 
-    public String getCorreo_usu() {
-        return correo_usu;
+    public String getNom() {
+        return nom;
     }
 
-    public void setCorreo_usu(String correo_usu) {
-        this.correo_usu = correo_usu;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
-    public String getPassword_usu() {
-        return password_usu;
+    public String getEdad() {
+        return edad;
     }
 
-    public void setPassword_usu(String password_usu) {
-        this.password_usu = password_usu;
+    public void setEdad(String edad) {
+        this.edad = edad;
     }
+    
     
 }

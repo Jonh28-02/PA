@@ -2,12 +2,7 @@
 :root {
     --colorTextos: #49454567;
 }
-.header{
-    background: url('../img/bg-banner02.jpg') no-repeat fixed;
-    background-size: cover;
-    min-height: 650px;
-    
-}
+
 .bg-color
 {
     background-color: rgba(78, 90, 77, 0.993);
@@ -15,36 +10,38 @@
 }
 
 .navbar-default {
-    background-color: rgba(58, 182, 33, 0.932);
+    background-color: rgba(52, 134, 202, 0.932);
     border:0px;
     padding: 20px 0; 
     transition: all 0.3s;
 }
-
+.navbar-brand{
+    background-color: white;
+}
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
 {
-    color: #3bac18;
+    color: #186aac;
 }
 
 .top-nav-collapse {
     padding: 0; 
-    background: rgb(53, 216, 31);
+    background: rgb(31, 142, 216);
 }
 
 .logo-dec
 {
-    color: #145212;
+    color: #2e6bbb;
 }
 
 
 
 body {
     font-family: 'Roboto';
-    background: #4568DC;
+    background-color: #3688ca;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #22ca3e, #4adc45);
+    background: -webkit-linear-gradient(to right, #227eca, #4581dc);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #22ca3e, #4adc45);
+    background: linear-gradient(to right, #2c9fe2, #45a0dc);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 750px;
     display: inline-flexbox;
@@ -58,7 +55,7 @@ h1{
 }
 
 form{
-    background: linear-gradient(to right, #22ca3e, #4adc45);
+    background: linear-gradient(to right, #225dca, #45a0dc);
 }
 .form{
     border-radius: 10px;
@@ -126,7 +123,7 @@ input:valid~label{
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #0f9738, #1ddb5dec);
+    background: linear-gradient(to right, #0f6c97, #1d7fdbec);
     transition: 0.3s ease width;
     left: 0;
 }
@@ -145,11 +142,11 @@ input:focus~.barra::before{
 
 button{
     font-family: 'roboto';
-    background: #4568DC;
+    background: #457adc;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: -webkit-linear-gradient(to right, #6a98b3, #4568DC);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #159148, #1ddb5dec);
+    background: linear-gradient(to right, #155991, #1d8fdbec);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     display: block;
@@ -177,8 +174,8 @@ button{
     right: 12px;
     width: 42px;
     height: 42px;
-    color: #61d44a;
-    background: #46be21;
+    color: #4aa8d4;
+    background: #2184be;
     font-size: 14px;
     line-height: 42px;
     text-align: center;
@@ -192,5 +189,11 @@ button{
     background-color: rgb(116, 116, 116);
 }
 #footer a{
-    color: #26be21;
+    color: #217fbe;
+}
+footer{
+    background: #217fbe;
+}
+body{
+    background-color: #155991;
 }

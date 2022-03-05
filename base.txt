@@ -1,9 +1,12 @@
-create table Musuario(
+create table usuario(
 id_usu int(3) not null auto_increment,
 nom_usu varchar(20) not null,
-appat_usu varchar(20) not null,
-apmat_usu varchar(20) not null,
-password_usu varchar(20) not null,
+appat varchar(20) not null,
+apmat varchar(20) not null,
+nom varchar(20) not null,
+genero varchar(20) not null,
+edad varchar(20) not null,
+password varchar(20) not null,
 PRIMARY KEY(id_usu),
 KEY(nom_usu));
 
@@ -15,12 +18,15 @@ puntaje int(10) not null,
 PRIMARY KEY(id_puntaje),
 KEY(nom_usu));
 
-create table Cimc(
-id_imc int(3) not null auto_increment,
-nom_usu varchar(20),
-altura varchar(20) not null,
+create table progreso(
+id_proge int(3) not null auto_increment,
+usu varchar(20),
+mes varchar(20) not null,
 peso varchar(20) not null,
+estatura varchar(20) not null,
+cintura varchar(20) not null,
 imc varchar(20) not null,
-PRIMARY KEY(id_imc),
-KEY(altura));
+igc varchar(20) not null,
+PRIMARY KEY(id_proge),
+KEY(usu));
 

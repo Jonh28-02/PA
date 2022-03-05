@@ -93,7 +93,7 @@ public class AccionesPuntaje {
         Puntaje b=new Puntaje();
         try{
             Connection con=Conexion.getConnection();
-            String q="select * from Cpuntajes where nom_usu=?";
+            String q="select * from usuario where nom_usu=?";
             PreparedStatement ps=con.prepareStatement(q);
             
             ps.setString(1, nombreUsuario);

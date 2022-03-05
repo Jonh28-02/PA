@@ -33,9 +33,9 @@
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/1/estilos.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-         <link rel="stylesheet" href="css/tablas.css">
+        
         <link rel="stylesheet" href="css/templatemo-style.css" />
 </head>
 
@@ -287,22 +287,16 @@ Copiar esto
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">ON HEALT<span class="logo-dec">LINE</span></a>
+                <a class="navbar-brand" href="#"><span class="logo-dec">FIT LINE</span></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="MenuUsu.jsp">Inicio</a></li>
-                    <li class=""><a href="leccion1.jsp">Leccion 1</a></li>
-                    <li class=""><a href="leccion2.jsp">Leccion 2</a></li>
-                    <li class=""><a href="leccion3.jsp">Leccion 3</a></li>
-                    <li class=""><a href="leccion4.jsp">Leccion 4</a></li>
-                    <li class=""><a href="">IMC</a></li>
-                    <li class=""><a href="puntajes.jsp">Puntajes</a></li>
-                    <li class=""><a href="">Graficas</a></li>
-                    <li class=""><a href="#">Bienvenido: <input type="hidden" name="id_usu">- <input type="hidden"
-                                name="usuario">
-                            <%=nombreUsuario%>
-                        </a></li>
+                <li class=""><a href="leccion1.jsp">RUTINAS</a></li>
+                <li class=""><a href="progreso.jsp">PROGRESO</a></li>
+                <li class=""><a href="leccion3.jsp">FORO</a></li>
+                
+                <li class=""><a href="perfil.jsp">Bienvenido: <input type="hidden" name="id_usu">- <input type="hidden" name="usuario"> <%=nombreUsuario%></a></li>
                 </ul>
             </div>
         </div>
@@ -325,30 +319,19 @@ Copiar esto
                 
             </div>
             <div class="perfil-usuario-footer">
-                <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-signs"></i> ID usuario: <%=b.getId_puntaje()%></li>
-                    <li><i class="icono fas fa-briefcase"></i> Lecciones Completadas: <%=b.getLecciones_completadas()%> </li>
-                    <li><i class="icono fas fa-building"></i> Puntaje: <%=b.getPuntaje()%> </li>
-                </ul>
+                
                 <form action="cerrar">
                 <button type="submit">Cerrar Sesion</button>
+            </form>
+            <form action="editar">
+                <button type="submit"><a href="editar.jsp">Editar perfil</a> </button>
             </form>
                 
             </div>
             
         </div>
     </section> <br><br><br><br><br><br><br><br>
-    <footer id="footer">
-        <div class="container">
-          <div class="row text-center">
-            <p>&copy; ON HEALT LINE</p>
-            <div class="credits">
-          
-              REPOSITORIO:<a href="https://github.com/Jonh28-02/PA_EQ8_4IV9"> GitHub</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+   
     <!--====  End of html  ====-->
 
 <!--=============================

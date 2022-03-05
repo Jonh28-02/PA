@@ -23,7 +23,7 @@ public class Conexion2 {
     public static String db;
     public void Conectar(){
         try{
-            usu="root"; contra="ringorivera28"; host="localhost"; db="proyecto";
+            usu="root"; contra="ringorivera28"; host="localhost"; db="proyectoaula";
             String url="jdbc:mysql://"+host+"/"+db;
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             conec=DriverManager.getConnection(url,usu,contra);

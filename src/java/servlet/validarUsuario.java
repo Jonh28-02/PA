@@ -35,12 +35,12 @@ public class validarUsuario extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            String usuario = request.getParameter("nom_usu");
-            String password = request.getParameter("password_usu");
+            String usuario = request.getParameter("nom");
+            String password = request.getParameter("password");
             
             Usuario e  =new Usuario();
-            e.setNombre_usu(usuario);
-            e.setPassword_usu(password);
+            e.setNom(usuario);
+            e.setPassword(password);
             
             int estatus=AccionesUsuario.validar(e);
             if(estatus==1){

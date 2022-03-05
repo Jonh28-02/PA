@@ -41,18 +41,23 @@ public class guardarUsuario extends HttpServlet {
             String nombre=request.getParameter("nom_usu");
             String apmat=request.getParameter("appat");
             String appat=request.getParameter("apmat");
+            String genero=request.getParameter("genero");
+            String edad = request.getParameter("edad");
+            String usu=request.getParameter("nom");
             String password=request.getParameter("password_usu");
             
             Usuario e = new Usuario();
-            e.setNombre_usu(nombre);
-            e.setApellidoP_usu(appat);
-            e.setApellidoM_usu(apmat);
-            e.setPassword_usu(password);
-            Puntaje b = new Puntaje();
-            b.setNom_usu(nombre);
+            e.setNom_usu(nombre);
+            e.setAppat(appat);
+            e.setApmat(apmat);
+            e.setNom(usu);
+            e.setEdad(edad);
+            e.setGenero(genero);
+            e.setPassword(password);
+            
             int estatus = AccionesUsuario.registrarUsuario(e);
             
-            int estatus2 = AccionesPuntaje.registrarPuntaje(b);
+            
             
             if(estatus>0){
                 response.sendRedirect("login_usu.html");

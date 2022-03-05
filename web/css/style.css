@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6{
   margin: -75px 0 0 -75px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #5bc52a;
+  border-top: 16px solid #4D71CE;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
@@ -96,7 +96,7 @@ HEADER
 {
 }
 .navbar-default {
-    background-color: rgba(58, 182, 33, 0.932);
+    background-color: rgba(93, 183, 219, 0.932);
     border:0px;
     padding: 20px 0; 
     transition: all 0.3s;
@@ -104,17 +104,17 @@ HEADER
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
 {
-    color: #3bac18;
+    color:rgba(93, 183, 219, 0.932);
 }
 
 .top-nav-collapse {
     padding: 0; 
-    background: rgb(53, 216, 31);
+    background: rgba(93, 183, 219, 0.932);
 }
 
 .logo-dec
 {
-    color: #145212;
+    color: #265174;
 }
 .navbar-default .navbar-brand {
     color: #fff;
@@ -145,12 +145,12 @@ HEADER
     transition: color 0.2s ease-out;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #0e660b;
+    color: #154a69;
     background-color: transparent;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     background-color: transparent;
-    color: #12740e;
+    color: #0e4374;
 }
 .banner-info
 {
@@ -199,17 +199,17 @@ h2.bnr-sub-title
 
 .btn-download
 {
-    background-color: #4bca32;
+    background-color: #3292ca;
 }
 .btn-more, .btn-more:focus
 {
     margin-left: 15px;
-    border: 1px solid #4bca32;
+    border: 1px solid #3281ca;
     color: #ffffff;
 }
 
 .btn-more:hover {
-    background: #4bca32;
+    background: #3286ca;
     color: #fff;
 }
 
@@ -397,7 +397,7 @@ ul.service-list li i
     width:100%;
     height:100%;
     padding: 59px 30px;
-    background-color: #21be36;
+    background-color: #2160be;
     backface-visibility:hidden;
     -webkit-transform:rotateY(-180deg);
     -moz-transform:rotateY(-180deg);
@@ -631,7 +631,7 @@ contact
 #footer
 {
     padding: 20px 10px;
-    background-color: #d6f1cb;
+    background-color: #a9c9e4;
 }
 .scrollToTop {
     position: fixed;
@@ -654,7 +654,7 @@ contact
     background-color: rgb(116, 116, 116);
 }
 #footer a{
-    color: #26be21;
+    color: #7abbda;
     font-weight: 400;
 }
 /***********************************
